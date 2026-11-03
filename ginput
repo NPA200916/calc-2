@@ -1,0 +1,26 @@
+name = input("What's your name?")
+
+
+def calculate_average(grades):
+    return sum(grades) / len(grades)
+
+
+grades_list = []
+for i in range(5):
+    grade = float(input("Enter your grades: "))
+    grades_list.append(grade)
+
+average_grade = calculate_average(grades_list)
+
+if average_grade >= 90:
+    print('You get an A!')
+elif average_grade >= 80:
+    print('You get a B!')
+elif average_grade >= 70:
+    print('You get a C!')
+elif average_grade >= 60:
+    print('You get a D!')
+else:
+    print("You get an F!")
+
+print(f"{name}'s average grade is {average_grade:.2f}")
