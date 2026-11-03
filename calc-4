@@ -1,0 +1,6 @@
+# calc level 4
+
+def add(a, b):
+    return a + b
+result = add('a + b')
+print(result)
